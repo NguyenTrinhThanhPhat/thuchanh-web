@@ -237,10 +237,12 @@ footer {
 
 .display-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .display-list .item {
-    flex: 1;
+    width: calc(100% / 4 - 10px);
+    margin-bottom: 10px;
 }
 .display-list .item:not(:last-child) {
     margin-right: 10px;
@@ -253,7 +255,13 @@ footer {
 .display-list .item .name{
     margin-bottom: 8px;
     font-weight: 600;
+    width: 100%;
 }
 .display-list .stars {
     color: #ff5139;
+}
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
